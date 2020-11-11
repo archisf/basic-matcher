@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'config',
-    'candidate.apps.CandidateConfig',
-    'skill.apps.SkillConfig',
-    'job.apps.JobConfig'
+    'backend.config',
+    'backend.candidate.apps.CandidateConfig',
+    'backend.skill.apps.SkillConfig',
+    'backend.job.apps.JobConfig'
 ]
 
 MIDDLEWARE = [
