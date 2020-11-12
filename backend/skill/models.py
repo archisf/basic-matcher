@@ -9,3 +9,6 @@ class Skill(models.Model):
         db_table = 'skill'
         verbose_name = 'Skill'
         verbose_name_plural = 'Skills'
+
+    def __str__(self):
+        return self.name

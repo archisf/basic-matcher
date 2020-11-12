@@ -14,3 +14,6 @@ class Candidate(models.Model):
         db_table = 'candidate'
         verbose_name = 'Candidate'
         verbose_name_plural = 'Candidates'
+
+    def get_skills(self):
+        return "\n".join([s.name for s in self.skill.all()])
