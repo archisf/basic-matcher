@@ -1,9 +1,9 @@
 from django.test import TestCase
 
-from backend.skill.models import Skill
+from skill.models import Skill
 
 
-class SomeModelModelTest(TestCase):
+class SkillModelTest(TestCase):
 
     def test_name_content(self):
         Skill.objects.create(name='test_name')

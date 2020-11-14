@@ -1,9 +1,9 @@
 import re
 
+from config.exceptions import BMBadRequest, BaseBMException
 from django.http import JsonResponse
 from rest_framework.views import APIView
 
-from config.exceptions import BMBadRequest, BaseBMException
 from .models import Candidate
 from .serializers import CandidateSerializer
 from .validator import CandidateFinderValidator
