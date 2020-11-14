@@ -2,9 +2,11 @@ FROM mhart/alpine-node:latest
 
 WORKDIR /app/frontend
 
-COPY . .
+COPY package.json /app/frontend
+COPY package-lock.json /app/frontend
 
-# Install dependencies
-RUN npm ci --prod
+RUN npm ci
 
 EXPOSE 3000
+
+CMD ["npm", "start"]
