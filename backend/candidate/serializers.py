@@ -8,4 +8,4 @@ class CandidateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Candidate
-        fields = ['id', 'title', 'skill', 'order_weight']
+        fields = ['id', 'title', 'skill', 'order_weight', 'get_skills']

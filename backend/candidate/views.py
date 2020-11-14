@@ -17,7 +17,7 @@ class CandidateFinderView(APIView):
             raise BMBadRequest
         qs = Candidate.objects.all()
         if 'title' in params and 'skill' in params:
-            pattern = re.compile("|".join(params['title'].split(" ")))
+            pattern = re.compile("|".join(params['title'].lower().split(" ")))
         result = []
         for candidate in qs:
             number_of_matches = len(pattern.findall(candidate.title.lower()))
