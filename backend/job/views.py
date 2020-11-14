@@ -1,7 +1,7 @@
 from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 
-from backend.config.exceptions import BMNoContent
+from config.exceptions import BMNoContent
 from .models import Job
 from .serializer import JobSerializer
 
